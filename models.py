@@ -2,7 +2,6 @@ import replicate
 import os
 
 # domain = os.environ['DOMAIN']
-domain = 'https://03f5-104-28-193-120.ngrok-free.app'
 
 def create_face_to_many(image, style):
 
@@ -15,7 +14,7 @@ def create_face_to_many(image, style):
         "instant_id_strength": 0.8
     }
     
-    callback_url = f'{domain}/webhooks/replicate/face-to-many'
+    callback_url = f'{os.environ['DOMAIN']}/webhooks/replicate/face-to-many'
 
     request = replicate.predictions.create(
         version="a07f252abbbd832009640b27f063ea52d87d7a23a185ca165bec23b5adc8deaf",
