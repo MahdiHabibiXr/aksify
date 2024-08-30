@@ -108,7 +108,7 @@ async def callbacks(client, callback_query):
     message = callback_query.message
     data = callback_query.data
     chat_id = callback_query.from_user.id
-    photo = f'{inp_dir}{chat_id}.jpg'
+    photo = f'{users_dir}{chat_id}/{inp_dir}{chat_id}.jpg'
 
     await message.delete()
 
