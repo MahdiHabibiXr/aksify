@@ -1,3 +1,6 @@
 *.session
 *.bat
 env
+notes
+files
+__pycache__

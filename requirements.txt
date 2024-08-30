@@ -1,0 +1,8 @@
+TgCrypto
+pyrogram
+pillow
+requests
+psycopg2-binary
+schedule
+replicate
+fastapi
